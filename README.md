@@ -7,74 +7,68 @@
 ## Project Description
 
 ### Overview
-This project conducts a comprehensive analysis of mouse tumor volume versus drug regimen. It utilizes two datasets to derive insights about mice tumor volumes and outcomes and trends based on the drug regimen.
+This project undertakes a comprehensive analysis of mouse tumor volumes in relation to various drug regimens. It utilizes two datasets to derive insights about tumor volume dynamics and treatment outcomes based on different drug regimens.
 
 ### Analysis Highlights
 
 #### Summary Statistics
 
-The analysis begins with showing summary statistics per drug regimen used on 248 mice grouped by the drug regimens; this includes the Mean Tumor Volume, Median Tumor Volume, Tumor Volume Variance, Tumor Volume Standard Deviation, and Tumor Standard Error of the Mean.  
+The analysis begins by presenting summary statistics per drug regimen for 248 mice. This includes Mean Tumor Volume, Median Tumor Volume, Tumor Volume Variance, Tumor Volume Standard Deviation, and Tumor Standard Error of the Mean.
 
 ![Summary statistics per drug regimen](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/summary_statistics.png)
 
 #### Bar and Pie Charts
-The bar chart shows the number of observed mouse timepoints per drug regimen in descending order.  As shown, Capomulin has the greated number of observed timepoints and propivera has the least.  This leads to further analysis of Capomulin results. 
+
+The bar chart displays the number of observed mouse timepoints per drug regimen in descending order. Notably, Capomulin has the highest number of observed timepoints, while Propivera has the least, guiding further analysis into Capomulin's efficacy.
 
 ![Bar chart of drug regimens vs number of observed mouse timepoints](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/bar_chart.png)
 
-The pie chart shows that there are slightly more male mice, 51%, compared to female mice, 49%.  
+The pie chart indicates a slightly higher presence of male mice (51%) compared to female mice (49%).
 
 ![Pie chart of mouse sexes](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/pie_chart.png)
 
-#### Quartiles, Outliers and Boxplots
-The final tumor volume of each mouse across four of the treatment regimens is calculated: Capomulin, Ramicane, Infubinol, and Ceftamin.  
+#### Quartiles, Outliers, and Boxplots
 
-Using the data to calculate interquartile range, we see that Infubinol has a Tumor Volume outlier of 36.321346 mm3.  This was for mouse c326. There were not outliers for Capomulin, Ramicane or Ceftamin.  
-
-We then plot the Final Tumor Volume using boxplots per drug regimens Capomulin, Ramicane, Infubinol, and Ceftamin.  
-
-Note the following about boxplots and what they show about the final tumor volumes per drug regimen: 
-   - The bottom of the box represents the first quartile (Q1; the 25th percentile) of the final tumor volumes. 
-   - The top of the box represents the third quartile (Q3; the 75th percentile) of final tumor volumes. 
-   - The line in the middle of the box represent the median (Q2; the 50th percentile) of final tumor volumes.
+Final tumor volumes are analyzed across four treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. The interquartile range calculation identifies an outlier for Infubinol with a tumor volume of 36.321346 mm3 for mouse c326. No outliers were found for Capomulin, Ramicane, or Ceftamin.
 
 ![Boxplots of Ramicane, Infubinol, and Ceftamin final tumor volumes](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/boxplots.png)
 
 #### Line and Scatter Plots
-The following line plot shows the Timepoint in days vs Tumor Volume for mouse l509 treated with Capomulin.  
+
+A line plot illustrates the progression of tumor volume over time for mouse l509 treated with Capomulin.
 
 ![Line plot of Capomulin Treatment for Mouse l509](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/line_plot.png)
 
-The following scaterplot shows mice weights vs their average tumor volume for the Capomulin drug regimen.  
+The scatter plot depicts the relationship between mice weights and their average tumor volumes under the Capomulin regimen, showing a positive correlation.
 
 ![Scatterplot of Capomulin treatment: Weight of Mouse vs Average Tumor Volume](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/scatterplot.png)
 
 #### Correlation and Regression
-The following scaterplot shows mice weights vs their average tumor volume for the Capomulin drug regimen, but also plots the linear regression model.  
+
+The scatter plot with a linear regression model highlights the relationship between mice weights and average tumor volume for the Capomulin regimen.
 
 ![Correlation and Regression of the scatterplot data](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/lin_reg.png)
 
 #### Conclusions
 
 - **Summary Statistics**:
-- The drug regimen Ramicane has the lowest meadian tumor volume (40.673236) and also the lowest standard deviation of tumor volume (4.846308).  Having the lowest standard deviation indicates that the tumor volumes are more consistently closer or less spread out from the median.  This suggests that the drug regimen results are more consistent. 
-- In contrast, Ketapril having the highest standard deviation (8.279709) indicates that the results were more spread out or that the tumor volumes were more inconsistent. 
+  - Ramicane exhibits the lowest median tumor volume (40.673236) and standard deviation (4.846308), indicating more consistent results compared to other regimens like Ketapril, which has the highest standard deviation (8.279709).
 
 - **Bar and Pie Charts**:
-- Our bar chart shows that Capomulin has the greatest number of observed timepoints in the experiment, which Ramicane close second and Propriva last.  This lends more data that can be analyzed for Capomulin.
-- The pie chart shows that there are slightly more male mice, 51%, compared to female mice, 49%. 
+  - The bar chart underscores Capomulin's dominance in observed timepoints, followed closely by Ramicane, and highlights areas for deeper investigation.
 
-- **Quartiles, Outliers and Boxplots**:
-- In our boxplots, we see an outlier for Final Tumor Volume for Infubinol, which was 36.321346 mm3.  
+- **Quartiles, Outliers, and Boxplots**:
+  - Infubinol shows an outlier in final tumor volume (36.321346 mm3), suggesting potential variability in treatment efficacy.
 
 - **Line and Scatter Plots**:
-- The line plot shows an increase in tumor volume for mouse l509 treated with Capomulin up until about day 20.  Then, we start to see a great decline in tumor volume.  This indicates progress in reducing the tumor volume of the mouse with this drug regimen.  
-- Our scatter plot shows that as the weight of mice increases, so does the average tumor volume. This suggests that there is a correlation between average tumor volume and weight of the mice.  
- 
-- **Correlation and Regressions**:
-- Our Correlation and Regression model, and Pearson's r correlation coefficient, confirm that there is a correlation between weight of the mice and average tumor volume of the mice.  The line shown on the graph increases from left to right.  Pearson's r correlation coefficient is 0.8419363424694724, which indicates a strong linear relationship.  
+  - The line plot reveals a significant reduction in tumor volume for mouse l509 under the Capomulin treatment regimen, indicating promising therapeutic outcomes.
 
-## Results 
+  - The scatter plot confirms a positive correlation between mouse weight and average tumor volume, reinforcing the need to consider weight variations in treatment outcomes.
+
+- **Correlation and Regression**:
+  - The strong linear relationship (Pearson's r correlation coefficient of 0.8419363424694724) between mouse weight and average tumor volume validates the correlation observed in the scatter plot.
+
+## Results
 
 ### Summary Statistics
 ![Summary statistics per drug regimen](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/summary_statistics.png)
@@ -84,7 +78,7 @@ The following scaterplot shows mice weights vs their average tumor volume for th
 
 ![Pie chart of mouse sexes](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/pie_chart.png)
 
-### Quartiles, Outliers and Boxplots
+### Quartiles, Outliers, and Boxplots
 ![Boxplots of Ramicane, Infubinol, and Ceftamin final tumor volumes](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/boxplots.png)
 
 ### Line and Scatter Plots
