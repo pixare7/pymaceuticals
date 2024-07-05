@@ -74,7 +74,23 @@ The following scaterplot shows mice weights vs their average tumor volume for th
 - **Correlation and Regressions**:
 - Our Correlation and Regression model, and Pearson's r correlation coefficient, confirm that there is a correlation between weight of the mice and average tumor volume of the mice.  The line shown on the graph increases from left to right.  Pearson's r correlation coefficient is 0.8419363424694724, which indicates a strong linear relationship.  
 
-
-
 ## Results 
 
+### Summary Statistics
+![Summary statistics per drug regimen](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/summary_statistics.png)
+
+### Bar and Pie Charts
+![Bar chart of drug regimens vs number of observed mouse timepoints](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/bar_chart.png)
+
+![Pie chart of mouse sexes](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/pie_chart.png)
+
+### Quartiles, Outliers and Boxplots
+![Boxplots of Ramicane, Infubinol, and Ceftamin final tumor volumes](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/boxplots.png)
+
+### Line and Scatter Plots
+![Line plot of Capomulin Treatment for Mouse l509](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/line_plot.png)
+
+![Scatterplot of Capomulin treatment: Weight of Mouse vs Average Tumor Volume](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/scatterplot.png)
+
+### Correlation and Regression
+![Correlation and Regression of the scatterplot data](https://github.com/pixare7/pymaceuticals-project/blob/main/results_images/lin_reg.png)
